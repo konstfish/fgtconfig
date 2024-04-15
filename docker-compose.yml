@@ -1,0 +1,10 @@
+name: fgtconfig
+services:
+    fgtconfig:
+        ports:
+            - 8080:8080
+        restart: always
+        logging:
+            options:
+                max-size: 20m
+        image: fgtconfig
