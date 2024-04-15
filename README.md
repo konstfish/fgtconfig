@@ -45,6 +45,7 @@ Display options:
     -color                   : ascii colors
     -html                    : HTML output
     -debug                   : debug mode
+    -serve                   : start serving a mojo http server
     -ruledebug               : rule parsing debug
 ~~~
 

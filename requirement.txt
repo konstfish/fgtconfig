@@ -1,3 +1,4 @@
 libmoose-perl
 libnet-netmask-perl
 libxml-libxml-perl
+libmojolicious-perl
