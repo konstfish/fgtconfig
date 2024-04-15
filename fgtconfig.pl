@@ -88,9 +88,9 @@ if ($serve) {
       my @lines = split /\n/, $captured_output;
 
       for my $line (@lines) {         
-         #color_features(\$line) ;
-         #color_warnings(\$line) ;
-         #color_vdom(\$line) ;
+         color_features(\$line) ;
+         color_warnings(\$line) ;
+         color_vdom(\$line) ;
       }
 
       my $modified_text = join "\n", @lines;
