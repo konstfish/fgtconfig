@@ -64,7 +64,7 @@ if ($serve) {
          $asset->move_to($filename);
          $temp_path = $filename;
       } else {
-         say "File is stored on disk at $temp_path";
+         $temp_path = $asset->path;
       }
 
       # apply configuration
@@ -88,9 +88,9 @@ if ($serve) {
       my @lines = split /\n/, $captured_output;
 
       for my $line (@lines) {         
-         color_features(\$line) ;
-         color_warnings(\$line) ;
-         color_vdom(\$line) ;
+         #color_features(\$line) ;
+         #color_warnings(\$line) ;
+         #color_vdom(\$line) ;
       }
 
       my $modified_text = join "\n", @lines;
